@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>RFID Status Display</h1>
+        <div>
+            <span>RFID TAG:</span><p id="rfid-tag"></p>
+            <span>RFID STATUS:</span><p id="rfid-status"></p>
+        </div>
+        <button class="btn-refresh" onclick="location.reload();">Refresh</button>
+    </div>
+    <script>
+        rfid_tag = document.getElementById("rfid-tag");
+        rfid_status = document.getElementById("rfid-status");
+
+        async function fetch_rfid() {
+            fetch();
+            rfid_tag.TextContent = 
+        }
+
+    </script>
+</body>
+</html>
